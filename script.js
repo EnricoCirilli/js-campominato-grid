@@ -1,41 +1,19 @@
+// ### Svolgimento
+// 1. Creare un nel documento html la struttura che include:
+
+// Logo img titolo e
+//  buttone cliccabile "play"
+
+// creo la griglia in html
+// creo il footer
+
+// 2. Creo nel file css lo stile della pagina ordinato
+
+// 3. in JS 
+// -collego il tasto "play "
+// -devo richimare il domunto in html dove andro ad aggiungere 
+// la mia griglia 10 x 10;
 
 
 
-// creo una griglia di 100 numeri 10x 10
-
-function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
-    for (c = 0; c < (rows * cols); c++) {
-        let cell = document.createElement("div");
-        cell.innerText = (c + 1);
-        container.appendChild(cell).className = "grid-item";
-       
-// seleziono una  singola cella che cambia colore al click
-
-        let divs = document.querySelectorAll(".grid-item");
-        const changeBackgroundColor = e => {
-            e.target.style.backgroundColor = "lightblue";
-            
-        }
-        divs.forEach(div => {
-            div.addEventListener("click", changeBackgroundColor, { once: true });
-        })
-    };
-
-};
-
-
-
-makeRows(10, 10);
-
-function myFunction() {
-    var x = document.getElementById("container");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-
+document.getElementById("play-btn").addEventListener("click", startGame);
