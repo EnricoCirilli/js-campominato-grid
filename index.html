@@ -9,32 +9,43 @@
 </head>
 
 <body>
-    <section class="header">
-        <img src="img/mobile-logo copy.png" alt="">
-        <h1>Campo Minato</h1>
-        <div>
-            <label for="cars">Choose a level</label>
-            <select>
-                <option value="level1">easy</option>
-                <option value="level2">hard</option>
-                <option value="level3">Crazy</option>
-            </select>
-            <button id="btn-play"> Play</button>
-            <p id="demo"></p>
+    <section>
+        
+        <!-- Header-->
+        <div class="header">
+            <img src="img/mobile-logo copy.png" alt="logo boolean">
+            <h1>Campo Minato</h1>
+            <div class="toolbar">
+                <label for="level">Diffcoltà</label>
+                <select name="level" id="level">
+                    <option value="1">Easy</option> 
+                    <option value="2">Hard</option> 
+                    <option value="3">Crazy</option>               
+                </select>
+                <button id="play-btn">Play</button>
+            </div>
+           
         </div>
-    </section>
-    <hr>
-    <section class="main">
-        <div class="container">
-            <h2>Seleziona il livello e clicca play</h2>
-            <!-- <div class="row">
-                <div class="col">1</div>
-            </div> -->
 
-    </section>
-    <hr>
-    <section class="footer">
-        <span>MAde with &hearts; by BOOLEANERS</span>
+        <hr>
+       
+
+        <!-- Main-->
+        <div id="grid" class="main-grid hidden">
+            <h2 id="title">Seleziona il livello di difficoltà e genera la griglia</h2>
+            <!-- <div class="square">
+                <span>1</span>
+
+            </div> -->
+        </div>
+        <!-- /Main-->
+        <hr>
+
+        <!-- Footer-->
+        <div class="footer">
+            made with &hearts; By Booleaner
+        </div>
+        <!-- /Footer-->
     </section>
     <script src="script.js"></script>
 </body>
